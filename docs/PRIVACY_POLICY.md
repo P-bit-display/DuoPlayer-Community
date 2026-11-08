@@ -36,5 +36,5 @@ DuoPlayer requests only the permissions necessary for its core functionality:
 
 ### 5. Contact and Support
 If you have questions or feedback regarding this Privacy Policy or your data privacy, you can reach us via our official GitHub repository:
-- **GitHub Issues:** [https://github.com/P-bit-display/DuoPlayer/issues](https://github.com/P-bit-display/DuoPlayer/issues)
+- **GitHub Issues:** [https://github.com/P-bit-display/DuoPlayer-Community/issues](https://github.com/P-bit-display/DuoPlayer-Community/issues)
 - **Email:** `support@p-bit-display.com`

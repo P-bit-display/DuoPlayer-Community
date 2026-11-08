@@ -4,8 +4,8 @@ Welcome to DuoPlayer support!
 
 ### 1. Community & Issue Tracker
 The primary place for bug reports, troubleshooting, and feature requests is our GitHub issue tracker:
-- **Submit a Bug or Request:** [https://github.com/P-bit-display/DuoPlayer/issues](https://github.com/P-bit-display/DuoPlayer/issues)
-- **Roadmap & Discussions:** [https://github.com/P-bit-display/DuoPlayer/discussions](https://github.com/P-bit-display/DuoPlayer/discussions)
+- **Submit a Bug or Request:** [https://github.com/P-bit-display/DuoPlayer-Community/issues](https://github.com/P-bit-display/DuoPlayer-Community/issues)
+- **Roadmap & Discussions:** [https://github.com/P-bit-display/DuoPlayer-Community/issues/2](https://github.com/P-bit-display/DuoPlayer-Community/issues/2)
 
 ### 2. Common Setup Guides
 - **Jellyfin / Emby:**
