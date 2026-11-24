@@ -18,6 +18,14 @@
 
 DuoPlayer 用来播放你已有访问权限的媒体，片源由你提供。出差前可以在有下载入口的影片详情页保存一集，再切到飞行模式，从下载列表试播并确认字幕。
 
+### 最新界面截图
+
+| 片库浏览 | 影片详情 |
+| --- | --- |
+| <img src="docs/assets/expanded-library.jpg" width="400" alt="展开布局中的媒体库和分类栏" /> | <img src="docs/assets/item-detail.jpg" width="400" alt="影片详情中的海报、播放按钮和信息栏" /> |
+
+[查看紧凑布局、桌面模式和书本模式截图](docs/DEVICE_COMPATIBILITY.md)
+
 ### 使用与交流
 
 [设备与布局](docs/DEVICE_COMPATIBILITY.md) · [MKV、字幕与 HDR](docs/MEDIA_COMPATIBILITY.md) · [连接排障](docs/SUPPORT.md) · [隐私政策](docs/PRIVACY_POLICY.md) · [需求征集](https://github.com/P-bit-display/DuoPlayer-Community/issues/2)
