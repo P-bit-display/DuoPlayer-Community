@@ -1,4 +1,6 @@
-# DuoPlayer · 在 iPhone Duo 上看自己的 Jellyfin 片库
+# DuoPlayer · iPhone Jellyfin / Emby 客户端与 NAS 视频播放器
+
+DuoPlayer 是一款 iOS 视频播放器，可连接 Jellyfin、Emby 和群晖 Synology NAS 的 WebDAV 片库。在 iPhone Duo 上支持折叠屏桌面播放布局。
 
 把 iPhone Duo 半折放在桌上，上半屏看电影，下半屏拖进度、换字幕。手指留在控制区，画面留给电影。
 
@@ -30,4 +32,4 @@ DuoPlayer 用来播放你已有访问权限的媒体，片源由你提供。出�
 
 [设备与布局](docs/DEVICE_COMPATIBILITY.md) · [MKV、字幕与 HDR](docs/MEDIA_COMPATIBILITY.md) · [连接排障](docs/SUPPORT.md) · [隐私政策](docs/PRIVACY_POLICY.md) · [需求征集](https://github.com/P-bit-display/DuoPlayer-Community/issues/2)
 
-**English** — DuoPlayer plays media from your Jellyfin, Emby or WebDAV library. In the tabletop layout, the video sits above the timeline and subtitle controls. [Download on the App Store](https://apps.apple.com/us/app/duoplayer-video-player/id6830926628?l=zh-Hans-CN) · [Support](docs/SUPPORT.md)
+**English** — DuoPlayer is a Jellyfin and Emby client for iPhone and an iOS video player for self-hosted media libraries, including Synology NAS over WebDAV. In the tabletop layout, the video sits above the timeline and subtitle controls. [Download on the App Store](https://apps.apple.com/us/app/duoplayer-video-player/id6830926628?l=zh-Hans-CN) · [Support](docs/SUPPORT.md)
