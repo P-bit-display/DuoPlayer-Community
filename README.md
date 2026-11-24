@@ -8,6 +8,8 @@
 **专为 iPhone Duo 折叠双屏与高端 iOS 设备打造的次世代原生媒体播放器**  
 *深度集成 Jellyfin 私有影库与群晖 Synology NAS，告别高昂订阅与卡顿转码，为极致视听体验而生。*
 
+**[在 App Store 下载 DuoPlayer](https://apps.apple.com/us/app/duoplayer-video-player/id6830926628?l=zh-Hans-CN)**
+
 [![iOS 27.1 Ready](https://img.shields.io/badge/iOS-27.1%2B-blue?style=flat-square&logo=apple)](https://apple.com)
 [![Foldable Native](https://img.shields.io/badge/Display-Foldable%20%26%20Dual--Screen-purple?style=flat-square)](https://github.com/P-bit-display/DuoPlayer)
 [![4K HDR](https://img.shields.io/badge/Video-4K%20UHD%20%7C%20Dolby%20Vision%20%7C%20HDR10-red?style=flat-square)](https://github.com/P-bit-display/DuoPlayer)
