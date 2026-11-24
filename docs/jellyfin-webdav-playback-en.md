@@ -10,4 +10,4 @@ A file with an `.mkv` extension can contain many combinations of video, audio an
 
 Use the same iPhone, app version, network and file for both runs. Record each result as Pass, Fail or Untested. If playback fails, capture the error and share codec details instead of the original movie.
 
-[English product overview](../README.en.md) · [Report a compatibility result](https://github.com/P-bit-display/DuoPlayer-Community/issues/new?template=bug_report.md) · [Download DuoPlayer](https://apps.apple.com/us/app/duoplayer-video-player/id6830926628)
+[English product overview](../README.en.md) · [Report a compatibility result](https://github.com/P-bit-display/DuoPlayer-Community/issues/new?template=playback-comparison.md) · [Download DuoPlayer](https://apps.apple.com/us/app/duoplayer-video-player/id6830926628)
