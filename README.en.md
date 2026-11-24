@@ -14,6 +14,12 @@ DuoPlayer plays video from your own Jellyfin, Emby or WebDAV library, including 
 
 [Playback compatibility guide in English](docs/jellyfin-webdav-playback-en.md) · [Foldable screenshots](docs/DEVICE_COMPATIBILITY.md#界面截图) · [Synology setup guide in Chinese](docs/synology-webdav-iphone.md)
 
+## Browse and watch
+
+- **Foldable layouts.** Tabletop mode places playback controls below the video. Book mode arranges the panes side by side.
+- **Chinese title search.** Search by title, full pinyin or pinyin initials.
+- **Interface languages.** Simplified Chinese, Traditional Chinese, English and Japanese.
+
 ## Help improve DuoPlayer
 
 When reporting playback trouble, include your app and iOS versions, media source and server version, container, audio and video codecs, and subtitle format. Remove account details, server addresses, and tokens from screenshots or logs.
