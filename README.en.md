@@ -20,6 +20,12 @@ DuoPlayer plays video from your own Jellyfin, Emby or WebDAV library, including 
 - **Chinese title search.** Search by title, full pinyin or pinyin initials.
 - **Interface languages.** Simplified Chinese, Traditional Chinese, English and Japanese.
 
+## iPhone playback and setup questions
+
+- **How do I watch videos from a Synology NAS on iPhone?** Connect to the NAS WebDAV service with a viewing account that can read the shared folder. [Synology WebDAV setup (Chinese)](docs/synology-webdav-iphone.md)
+- **Why does an MKV play through Jellyfin but fail over WebDAV?** Compare the same file on both sources and check the playback method in the Jellyfin dashboard. [MKV, subtitles and transcoding on iPhone](docs/jellyfin-webdav-playback-en.md)
+- **What does a foldable iPhone video player look like in tabletop mode?** The video sits above the timeline, playback and subtitle controls. [iPhone Duo foldable playback screenshots](docs/DEVICE_COMPATIBILITY.md#界面截图)
+
 ## Help improve DuoPlayer
 
 When reporting playback trouble, include your app and iOS versions, media source and server version, container, audio and video codecs, and subtitle format. Remove account details, server addresses, and tokens from screenshots or logs.
