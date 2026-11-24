@@ -4,7 +4,7 @@
 | --- | --- |
 | 家里也连不上 | 在同一台手机、同一个 Wi-Fi 下用浏览器打开 Jellyfin 地址。核对协议、端口、路径和账号，再在 App 内点「测试连接」。 |
 | 家里能播，出门连不上 | 用移动网络访问你配置的远程地址。家庭局域网地址通常只能在家中网络或已连接的 VPN 使用。 |
-| WebDAV 能连接，看不到文件 | 核对 WebDAV 服务地址、媒体目录路径和账号读取权限。 |
+| WebDAV 能连接，看不到文件 | 核对服务地址、媒体目录路径和读取权限。[查看群晖 WebDAV 的 iPhone 连接步骤](synology-webdav-iphone.md)。 |
 | 能看到海报，播放失败 | 先用一段 H.264/AAC 的 MP4 对照，再查看[格式与字幕指南](MEDIA_COMPATIBILITY.md)。 |
 
 [提交播放或连接问题](https://github.com/P-bit-display/DuoPlayer-Community/issues/new?template=bug_report.md) · [提交功能建议](https://github.com/P-bit-display/DuoPlayer-Community/issues/new?template=feature_request.md)
