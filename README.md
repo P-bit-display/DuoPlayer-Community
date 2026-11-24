@@ -4,7 +4,7 @@ DuoPlayer 是一款 iOS 视频播放器，可连接 Jellyfin、Emby 和群晖 Sy
 
 把 iPhone Duo 半折放在桌上，上半屏看电影，下半屏拖进度、换字幕。手指留在控制区，画面留给电影。
 
-**[在 App Store 下载 DuoPlayer](https://apps.apple.com/us/app/duoplayer-video-player/id6830926628?l=zh-Hans-CN)** · [连接我的片库](docs/MOVIEPILOT_JELLYFIN_SOP.md) · [反馈问题](https://github.com/P-bit-display/DuoPlayer-Community/issues/new?template=bug_report.md)
+**[在 App Store 下载 DuoPlayer](https://apps.apple.com/us/app/duoplayer-video-player/id6830926628?l=zh-Hans-CN)** · [连接 Jellyfin](docs/MOVIEPILOT_JELLYFIN_SOP.md) · [连接群晖 WebDAV](docs/synology-webdav-iphone.md) · [反馈问题](https://github.com/P-bit-display/DuoPlayer-Community/issues/new?template=bug_report.md)
 
 <img src="docs/assets/tabletop-controls.jpg" width="320" alt="桌面播放布局，上方是影片，下方是时间轴、播放按钮和字幕／音轨入口" />
 
