@@ -36,6 +36,13 @@ DuoPlayer 用来播放你已有访问权限的媒体，片源由你提供。出�
 
 [查看紧凑布局、桌面模式和书本模式截图](docs/DEVICE_COMPATIBILITY.md)
 
+### iPhone 播放器常见问题
+
+- **iPhone 怎么连接 Jellyfin 或 Emby 片库？** 用服务器地址和观影账号添加媒体源，再测试连接。[Jellyfin 连接教程](docs/MOVIEPILOT_JELLYFIN_SOP.md)
+- **群晖 NAS 上的电影怎么在 iPhone 上播放？** 用 WebDAV 连接共享目录。[群晖 NAS WebDAV 播放教程](docs/synology-webdav-iphone.md)
+- **iPhone 上 Jellyfin 能看到海报却无法播放，或出门后连不上？** [排查 Jellyfin 播放失败和移动网络连接](docs/SUPPORT.md)
+- **iPhone 播放 MKV 为什么有的能播、有的需要转码？** 容器、音视频编码、字幕和服务器设置都会影响结果。[MKV、字幕与转码指南](docs/MEDIA_COMPATIBILITY.md)
+
 ### 使用与交流
 
 [设备与布局](docs/DEVICE_COMPATIBILITY.md) · [MKV、字幕与 HDR](docs/MEDIA_COMPATIBILITY.md) · [连接排障](docs/SUPPORT.md) · [隐私政策](docs/PRIVACY_POLICY.md) · [需求征集](https://github.com/P-bit-display/DuoPlayer-Community/issues/2)
