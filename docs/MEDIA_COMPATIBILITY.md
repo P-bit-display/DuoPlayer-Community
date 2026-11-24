@@ -1,33 +1,15 @@
-# Media & Codec Compatibility Matrix
+# 为什么同样是 MKV，有的能播，有的需要转码？
 
-## Overview
-DuoPlayer adopts an intelligent dual-engine architecture:
-- **AVFoundation (AVPlayerEngine)**: First-class hardware-accelerated playback for Apple-native formats, high energy efficiency, system Picture-in-Picture (PiP), and native HDR10 / Dolby Vision output.
-- **VLC Engine (VLCPlayerEngine)**: Fallback engine handling complex MKV containers, ASS/SSA stylized subtitles, multi-track audio switching (e.g., DTS, FLAC, Vorbis), and non-standard bitstreams.
+MKV、MP4 是容器，里面可以装入不同编码的视频、音轨和字幕。同一个文件，通过 Jellyfin 播放与从 WebDAV 直接打开，走的播放路径可能不同。
 
-## Video Codec & Container Matrix
+| 你遇到的情况 | 建议先做的验证 |
+| --- | --- |
+| 第一次连接片库 | 先播一段 H.264 视频、AAC 音频的 MP4，确认连接和基础播放。 |
+| MKV 通过 Jellyfin 可以播，通过 WebDAV 打不开 | 在 Jellyfin 控制台查看该会话的播放方式。服务器可以重新封装或转码；WebDAV 提供文件本身。 |
+| 切换音轨或字幕后开始卡顿 | 记下轨道语言和格式。先用原音轨、关闭字幕试播，再逐项开启，对照服务器的播放信息。 |
+| HDR 或 Dolby Vision 颜色异常 | 记录设备、视频编码、HDR 格式和播放路径。再播放一段已知正常的 SDR 视频作对照。 |
+| 下载完成后准备离线看 | 断开网络，从下载列表试播，拖动一次时间轴并确认所需字幕。 |
 
-| Container | Video Codec | Audio Codec | Subtitles | Recommended Engine | Hardware Accel | Notes |
-|:---|:---|:---|:---|:---|:---|:---|
-| MP4 / M4V | H.264 (AVC) | AAC, AC3, E-AC3 | SRT, WebVTT, tx3g | AVPlayer | Yes (VideoToolbox) | Direct native playback |
-| MP4 / MOV | H.265 (HEVC) 8/10-bit | AAC, E-AC3, TrueHD (downmix) | SRT, WebVTT | AVPlayer | Yes | Full native 4K support |
-| MKV (Remote Jellyfin) | H.264 / HEVC | AAC, AC3, E-AC3 | SRT, WebVTT | AVPlayer (via HLS fMP4) | Yes (Hardware) | Dynamic Jellyfin HLS remuxing prevents black screen |
-| MKV (Local / Raw) | HEVC 10-bit / VP9 | DTS-HD, TrueHD, FLAC | ASS / SSA (styled) | VLC Engine | Software / Hybrid | VLC handles complex font rendering & non-Apple demux |
-| WebM | VP8 / VP9 / AV1 | Opus, Vorbis | WebVTT | VLC Engine | Yes (AV1 on M3+/A17+) | Open web media formats |
+重新封装可以保留原有音视频编码；转码会重新编码至少一条媒体流。实际选择取决于媒体、客户端能力和服务器设置。[Jellyfin 转码文档](https://jellyfin.org/docs/general/post-install/transcoding/)
 
-## HDR & Dolby Vision Playback Decisions
-
-| Standard | Profile / Level | AVPlayer Native Support | Decision Logic & Fallback Path |
-|:---|:---|:---|:---|
-| **SDR (Rec.709)** | Standard 8-bit | Full | Direct AVPlayer playback |
-| **HDR10** | Main 10, Rec.2020, ST 2084 | Full | Native AVPlayer rendering on HDR displays |
-| **HLG** | ARIB STD-B67 | Full | Native AVPlayer rendering on HDR displays |
-| **Dolby Vision Profile 5** | Single-track HEVC, IPT-C2, no fallback | Full on Apple devices | Direct AVPlayer playback; tone-maps on SDR displays |
-| **Dolby Vision Profile 7 (MEL/FEL)** | Dual-track UHD Blu-ray | Base Layer only | Fallback: Extracts base HDR10 layer; ignores secondary EL |
-| **Dolby Vision Profile 8.1** | Cross-compatible HEVC + HDR10 base | Full | Direct AVPlayer playback; uses HDR10 metadata fallback |
-| **Dolby Vision Profile 8.4** | HLG base (Apple Camera format) | Full | Direct AVPlayer playback |
-
-## Subtitle Engine
-- **External SRT / VTT**: Parsed into native timed cues (`SubtitleCue`), rendered via synchronized SwiftUI overlay with customizable typography and position.
-- **Embedded MKV Subtitles**: Extracted or rendered by VLC engine with font styling preserved.
-- **ASS / SSA Stylized**: Parsed with timing and formatting tags or handled by VLC's libass renderer.
+如需[报告兼容性问题](https://github.com/P-bit-display/DuoPlayer-Community/issues/new?template=bug_report.md)，请附文件容器、视频和音频编码、字幕类型与错误提示。提供这些参数即可，无需上传整部影片。
